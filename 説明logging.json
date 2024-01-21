@@ -1,6 +1,6 @@
 {
-  "version": 1,　
-  "disable_existing_loggers": false,
+  "version": 1, #1固定。後のバージョンアップ用パラメータ
+  "disable_existing_loggers": false,  #同じファイル名が存在した時の処理。falseで上書
   "root": {
     "level": "DEBUG",
     "handlers": [
@@ -13,7 +13,7 @@
       "class": "logging.StreamHandler",
       "level": "INFO",
       "formatter": "consoleFormatter",
-      "stream": "ext://sys.stdout"
+      "stream": "ext://sys.stdout"  #標準コンソールの出力
     },
     "logFileHandler": {
       "class": "logging.FileHandler",
